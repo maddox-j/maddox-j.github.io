@@ -1,0 +1,33 @@
+I"#<h1 id="foobar">Foobar</h1>
+
+<p>Foobar is a Python library for dealing with word pluralization.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Use the package manager <a href="https://pip.pypa.io/en/stable/">pip</a> to install foobar.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>foobar
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">foobar</span>
+
+<span class="c1"># returns 'words'
+</span><span class="n">foobar</span><span class="p">.</span><span class="n">pluralize</span><span class="p">(</span><span class="s">'word'</span><span class="p">)</span>
+
+<span class="c1"># returns 'geese'
+</span><span class="n">foobar</span><span class="p">.</span><span class="n">pluralize</span><span class="p">(</span><span class="s">'goose'</span><span class="p">)</span>
+
+<span class="c1"># returns 'phenomenon'
+</span><span class="n">foobar</span><span class="p">.</span><span class="n">singularize</span><span class="p">(</span><span class="s">'phenomena'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="contributing">Contributing</h2>
+<p>Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.</p>
+
+<p>Please make sure to update tests as appropriate.</p>
+
+<h2 id="license">License</h2>
+<p><a href="https://choosealicense.com/licenses/mit/">MIT</a></p>
+:ET
