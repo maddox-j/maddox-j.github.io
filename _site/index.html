@@ -21,7 +21,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="/index.html">Andrej Jovanovic</a></h1>
+						<h1>Andrej Jovanovic</h1>
 					</header>
 					<!-- Banner -->
 <section id="banner">
@@ -38,7 +38,7 @@
 	<!-- One -->
 		<section id="one" class="wrapper spotlight style1">
 			<div class="inner">
-				<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+				<a href="#" class="image"><img src="images/pengu.jpg" alt="" /></a>
 				<div class="content">
 					<h2 class="major">About me</h2>
 					<p>I am a third-year artificial intelligence and computer science student at the University of Edinburgh. I am an analytical, curious and dedicated worker who is ready to integrate his optimistic outlook into any team. I have an interest in how data analysis can be used to solve pressing global issues. I am looking to gain practical experience in the dynamic and expanding field of computer science to compliment my current knowledge and to extend my capabilities as a professional.</p>
@@ -53,7 +53,26 @@
 				<a href="#" class="image"><img src="images/projects.png" alt="" /></a>
 				<div class="content">
 					<h2 class="major">Projects</h2>
-					<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+						<ul>
+						<li><h3>Drone Food Delivery Service - Java</h3>
+							<p>
+								The task of this project was to plan the route that a drone will take to deliver food and drink orders on a given day. There were a number of limitations to this:<br>
+								1) The drone had a limited number of moves before it ran out of battery. <br>
+								2) The drone could not fly over certain predefined buildings (no-fly zone(s)).<br>
+								To find the shortest route, I implemented a nearest neighbour heuristic between adjacent orders based on the straight-line distances between two potential start and destination nodes. Once this was obtained, I found potential rerouting nodes, the vertices of the bounding box for each no-fly zone, so as to avoid the obstacles. However, another limitation is the drone could only fly on a bearing that was a multiple of ten between zero and three hunder and fifty degrees. To ensure that the no-fly zones were never touched, a implemented an algorithm to apply local corrections to the current path whilst ensuring the smallest deviation from the target.
+							</p>
+						</li>
+						<li><h3>The Effect of COVID-19 on the Usage of 'Just Eats Cycles' - Python</h3>
+							<p>
+								In a report with a coursework partner, we investigate how the usage of the bike sharing service ’Just Eat Cycles’ was impacted by the COVID-19 pandemic. We hypothesised that users of ’Just Eat Cycles’ would use this service to visit scenic locations and to exercise, instead of commuting. To address this hypothesis, we first examined how the activity at various stations scattered across the city changed in pre and post-lockdown periods. We expected to see that ’Just Eat Cycles’ trips would not cluster as tightly around the city centre as before. Rather, we would have increased activity outside this area, specifically near scenic locations. Indeed, this was the case. We also hypothesised that the proportion of long tips in the post-lockdown period would increase. After conducting an A/B test with a bootstrap simulation, we accepted this claim with 100% confidence. Similarly, there was an increase of 230.10% of trips starting and ending in the same location, confirming a decreased usage for commuting purposes. This is contrasted to a 58.73% increase in trips overall. <br> <br> See the full report on GitHub.
+
+							</p>
+						</li>
+						<li><h3>Arduino Audio Visualiser - C/C++</h3>
+							<p>Using an ESP32 board, I connected two microphones and an OLED dislplay to the microcontroller. With these, I processed the input from the analogue microphone and 
+displayed the signal on the display according to the volume intensity.</p>
+						</li>
+						</ul> 
 					<a href="https://github.com/maddox-j" class="special">View my projects on GitHub</a>
 				</div>
 			</div>
