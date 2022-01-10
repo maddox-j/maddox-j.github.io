@@ -23,8 +23,6 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	list-style: none;
-	text-align: justify;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
