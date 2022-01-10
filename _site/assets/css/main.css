@@ -23,6 +23,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	list-style: none;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -35,6 +36,10 @@ body {
 
 ol, ul {
 	list-style: none;
+}
+
+p {
+	text-align: justify;
 }
 
 blockquote, q {
