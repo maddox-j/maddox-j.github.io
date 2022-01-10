@@ -9,18 +9,18 @@ layout: default
 		<a href="/index.html">Home</a>
 	</nav>
 </header>
-<section id="wrapper">
-	<header>
-		<div class="inner">
-			<h2>{{page.title}}</h2>
-			<p>{{page.description}} | {{page.date | date: "%m-%d-%Y"}} </p>
-		</div>
-	</header>
-	<!-- Content -->
-		<div class="wrapper">
-			<div class="inner">
-				{{ content }}
-			</div>
-		</div>
+<section id="banner">
+	<div class="inner">
+		<div class="logo"><span class="icon brands fa-connectdevelop"></span></div>
+		<h2>{{page.title}}</h2>
+		<p>{{page.description}} | {{page.date | date: "%m-%d-%Y"}} </p>
+	</div>
 </section>
-		
+<section id="wrapper">
+<!-- Content -->
+	<div class="wrapper">
+		<div class="inner">
+			{{ content }}
+		</div>
+	</div>
+</section>
