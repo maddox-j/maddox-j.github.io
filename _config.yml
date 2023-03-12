@@ -1,0 +1,19 @@
+url: http://maddox-j.github.io
+baseurl: ""
+
+# Site Settings
+title: Andrej Jovanović
+description: "Let's do good with models"
+keywords: "Machine Learning, Chandan Singh, Berkeley, Interpretability, Explainability, Causal Inference"
+collections:
+ blog:
+    name: blog
+    output: true
+ notes:
+    name: Notes
+    documentation: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+    output: true
+markdown: kramdown
+
+highlighter: rouge
+exclude: ["Rakefile", "LICENSE", "readme.md"]
