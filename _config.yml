@@ -3,8 +3,8 @@ baseurl: ""
 
 # Site Settings
 title: Andrej Jovanović
-description: "Let's do good with models"
-keywords: "Machine Learning, Chandan Singh, Berkeley, Interpretability, Explainability, Causal Inference"
+description: "A budding machine learning researcher."
+keywords: "Machine Learning, NLP, Research, Efficiency, Deployment"
 collections:
  blog:
     name: blog
