@@ -1,0 +1,7 @@
+---
+layout: notes
+title: EDAC - Efficient Deployment of Audio Classification Models For COVID-19 Detection
+description:
+---
+# Abstract
+The global spread of COVID-19 has had severe consequences for public health and the world economy. In order to effectively combat this crisis, it is vital that adequate screening methods are developed to monitor the prevalence of the disease in a population. Many machine learning methods have been implemented, in lieu of Polymerase Chain Reaction tests, to detect COVID-19. The solutions leverage various input features, such as CT scans or cough audio signals, with state-of-the-art results arising from deep neural network (DNN) architectures. However, for these models to be deployed on edge devices, they need to be compressed such that they are supported by the device's hardware resources. To this end, we recreate two models that use cough audio recordings to detect COVID-19. Through using network pruning and quantisation, we were able to compress these two architectures without reducing the model's predictive performance.  Specifically, we were able to achieve a ~150x and a ~12.3x reduction in the compressed model file size for the two models, respectively. The code for this paper has been made publicly available on [GitHub](https://github.com/mlp-g001/EDAC-COVID19).
