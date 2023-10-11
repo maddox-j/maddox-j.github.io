@@ -14,61 +14,54 @@
 </h2>
 
 <script>
-    // $(document).ready(function () {
-    //     $('#research_table').DataTable({
-    //         "order": [[0, "desc"]],
-    //         "aLengthMenu": [[15, -1], [15, "All"]],
-    //         "pageLength": "15",
-    //         dom: 'Bfrtip',
-    //         buttons: [
-    //             {
-    //                 text: '🔎 interpretability',
-    //                 action: function (e, dt, node, config) {
-    //                     $(".dataTables_wrapper input").val(function () {
-    //                         return this.value + "🔎";
-    //                     });
-    //                     // $(".dataTables_wrapper input").submit();
-    //                 }
-    //             },
-    //             {
-    //                 text: '🌀 deep learning',
-    //                 action: function (e, dt, node, config) {
-    //                     $(".dataTables_wrapper input").val(function () {
-    //                         return this.value + "🌀";
-    //                     });
-    //                     // $(".dataTables_wrapper input").val("🌀");
-    //                 }
-    //             },
-    //             {
-    //                 text: '🌳 interpretable models',
-    //                 action: function (e, dt, node, config) {
-    //                     $(".dataTables_wrapper input").val(function () {
-    //                         return this.value + "🌳";
-    //                     });
-    //                     // $(".dataTables_wrapper input").val("🌳");
-    //                 }
-    //             },
-    //             {
-    //                 text: '💻 open-source ML',
-    //                 action: function (e, dt, node, config) {
-    //                     $(".dataTables_wrapper input").val(function () {
-    //                         return this.value + "💻";
-    //                     });
-    //                     // $(".dataTables_wrapper input").val("💻");
-    //                 }
-    //             },
-    //             {
-    //                 text: '🧠',
-    //                 action: function (e, dt, node, config) {
-    //                     $(".dataTables_wrapper input").val(function () {
-    //                         return this.value + "🧠";
-    //                     });
-    //                     // $(".dataTables_wrapper input").val("🧠");
-    //                 }
-    //             },
-    //         ]
-    //     });
-    // });
+    $(document).ready(function () {
+        $('#research_table').DataTable({
+            "order": [[0, "desc"]],
+            "aLengthMenu": [[15, -1], [15, "All"]],
+            "pageLength": "15",
+            dom: 'Bfrtip',
+            buttons: [
+                {
+                    text: '🌀 deep learning',
+                    action: function (e, dt, node, config) {
+                        $(".dataTables_wrapper input").val(function () {
+                            return this.value + "🌀";
+                        });
+                    }
+                },
+                {
+                    text: '🗣️ nlp',
+                    action: function (e, dt, node, config) {
+                        $(".dataTables_wrapper input").val(function () {
+                            return this.value + "🌀";
+                        });
+                    }
+                },
+                {
+                    text: '💻 open-source ML',
+                    action: function (e, dt, node, config) {
+                        $(".dataTables_wrapper input").val(function () {
+                            return this.value + "💻";
+                        });
+                    }
+                },
+                {
+                    text: '🌳 efficiency',
+                    action: function (e, dt, node, config) {
+                        $(".dataTables_wrapper input").val(function () {
+                            return this.value + "🌳";
+                        });
+                    }
+                },
+            ]
+        });
+    });
+    
+    // When the user clicks on <div>, open the popup
+    function popup() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    }
 </script>
 
 <table id="research_table" class="display" style="width:100%">
@@ -86,13 +79,29 @@
     <tbody>
         <tr>
             <td class="center">2023</td>
-            <td>Coming soon..
+            <td>Rumour Detecion in the Wild: A Browser Extension for Twitter
             </td>
-            <td></td>
-            <td class="med"></td>
-            <td class="center"><a href=""></a></td>
-            <td class="big"><a href=""><i></i></a></td>
+            <td>jovanović & ross</td>
+            <td class="med">💻🗣️🌀</td>
+            <td class="center"><a href="">NLP-OSS @ EMNLP2023</a></td>
+            <td class="big"><a target="_blank" href="https://github.com/maddox-j/rumour_detection_in_the_wild"><i
+                        class="fa fa-github fa-fw"></i></a>
             <td class="med">
+            </td>
+        </tr>
+        <tr>
+            <td class="center">2023</td>
+            <td>EDAC: Efficient Deployment of Audio Classification Models For COVID-19 Detection 
+            </td>
+            <td>jovanović<sup>*</sup>, mihaly<sup>*</sup> & donaldson<sup>*</sup></td>
+            <td class="med">🌳🌀</td>
+            <td class="center"><a target="_blank" href="https://arxiv.org/abs/2309.05357">arxiv preprint</a></td>
+            <td class="big"><a target="_blank" href="https://github.com/EDAC-ML4H/EDAC-ML4H"><i
+                        class="fa fa-github fa-fw"></i></a>
+            <td class="med">
+                <div class="popup" onmouseover="popup()" onmouseout="popup()">More info...
+                    <span class="popuptext" id="myPopup">Awarded second place IBM prize in MLP course awards at UoE.</span>
+                </div> 
             </td>
         </tr>
     </tbody>
@@ -124,3 +133,60 @@
 
     }
 </style>
+<style>
+    .popup {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    /* The actual popup */
+    .popup .popuptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -80px;
+    }
+    
+    /* Popup arrow */
+    .popup .popuptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+    
+    /* Toggle this class - hide and show the popup */
+    .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+    
+    /* Add animation (fade in the popup) */
+    @-webkit-keyframes fadeIn {
+      from {opacity: 0;} 
+      to {opacity: 1;}
+    }
+    
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity:1 ;}
+    }
+    </style>
