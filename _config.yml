@@ -3,8 +3,9 @@ baseurl: ""
 
 # Site Settings
 title: Andrej Jovanović
-description: "A budding machine learning researcher."
-keywords: "Machine Learning, NLP, Research, Efficiency, Deployment"
+author: Andrej Jovanović
+description: "A budding machine learning researcher who is passionate about efficient and secure solutions."
+keywords: "Distributed Machine Learning, Efficient Machine Learning, NLP, "
 collections:
  blog:
     name: blog
