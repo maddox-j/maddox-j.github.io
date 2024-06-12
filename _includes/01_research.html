@@ -3,10 +3,24 @@
         <summary> Read research overview</summary>
         <div class="research_details_text">
             <p>
-                My current research focuses on the applicability of NLP tools to different use cases, and methods for
-                efficient machine learning.
+                At present, my machine learning interests are centred around <em>distributed</em>,
+                <em>privacy-preserving</em>, <em>efficient</em>
+                and <em>collaborative</em> machine learning.
+                In particular, I have a great affinity towards paradigms such as <em>federated learning</em> and
+                <em>neural network compression</em>,
+                branching off into areas such as <em>mechanistic interpretability</em>. Generally speaking, the
+                motivating factor for this is that
+                I am circumspect towards the promise of centralised machine learning paradigms, which require enormous
+                amounts of data and
+                computational resources to achieve their state-of-the-art performance. Instead, I believe that there is
+                much benefit to
+                be derived from investigating alternate paradigms that can scale while promoting privacy inherently,
+                supported by sound
+                mathematical foundations.
                 <br><br>
-                More coming soon.
+                I am actively looking for PhD opportunities to start in 2025 Spring/Autumn. If you know of any
+                vacancies,
+                please do not hesitate to reach out.
 
             </p>
         </div>
@@ -56,11 +70,11 @@
             ]
         });
     });
-    
+
     // When the user clicks on <div>, open the popup
     function popup() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
     }
 </script>
 
@@ -83,7 +97,8 @@
             </td>
             <td>jovanović & ross</td>
             <td class="med">💻🗣️🌀</td>
-            <td class="center"><a target="_blank" href="https://openreview.net/forum?id=9akS9IBfKs">NLP-OSS @ EMNLP2023</a></td>
+            <td class="center"><a target="_blank" href="https://openreview.net/forum?id=9akS9IBfKs">NLP-OSS @
+                    EMNLP2023</a></td>
             <td class="big"><a target="_blank" href="https://github.com/maddox-j/rumour_detection_in_the_wild"><i
                         class="fa fa-github fa-fw"></i></a>
             <td class="med">
@@ -92,7 +107,7 @@
         </tr>
         <tr>
             <td class="center">2023</td>
-            <td>EDAC: Efficient Deployment of Audio Classification Models For COVID-19 Detection 
+            <td>EDAC: Efficient Deployment of Audio Classification Models For COVID-19 Detection
             </td>
             <td>jovanović<sup>*</sup>, mihaly<sup>*</sup> & donaldson<sup>*</sup></td>
             <td class="med">🌳🌀</td>
@@ -101,8 +116,9 @@
                         class="fa fa-github fa-fw"></i></a>
             <td class="med">
                 <div class="popup" onmouseover="popup()" onmouseout="popup()">More info...
-                    <span class="popuptext" id="myPopup">Awarded second place IBM prize in MLP course awards at UoE.</span>
-                </div> 
+                    <span class="popuptext" id="myPopup">Awarded second place IBM prize in MLP course awards at
+                        UoE.</span>
+                </div>
             </td>
         </tr>
     </tbody>
@@ -136,58 +152,68 @@
 </style>
 <style>
     .popup {
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
-    
+
     /* The actual popup */
     .popup .popuptext {
-      visibility: hidden;
-      width: 160px;
-      background-color: #555;
-      color: #fff;
-      text-align: center;
-      border-radius: 6px;
-      padding: 8px 0;
-      position: absolute;
-      z-index: 1;
-      bottom: 125%;
-      left: 50%;
-      margin-left: -80px;
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
     }
-    
+
     /* Popup arrow */
     .popup .popuptext::after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      margin-left: -5px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: #555 transparent transparent transparent;
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
     }
-    
+
     /* Toggle this class - hide and show the popup */
     .popup .show {
-      visibility: visible;
-      -webkit-animation: fadeIn 1s;
-      animation: fadeIn 1s;
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
     }
-    
+
     /* Add animation (fade in the popup) */
     @-webkit-keyframes fadeIn {
-      from {opacity: 0;} 
-      to {opacity: 1;}
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
-    
+
     @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity:1 ;}
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
-    </style>
+</style>
