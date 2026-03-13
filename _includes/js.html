@@ -20,7 +20,164 @@
 
 <script src="{{site.baseurl}}/assets/js/particles.min.js"></script>
 <script>
-    particlesJS.load('particles-js', '{{site.baseurl}}/assets/js/particles.json', function () {
-        console.log('callback - particles.js config loaded');
-    });
+    function loadParticlesForTheme(theme) {
+        if (!window.particlesJS || !document.getElementById('particles-js')) {
+            return;
+        }
+
+        var particlesConfig = theme === 'light'
+            ? '{{site.baseurl}}/assets/js/particles-light.json'
+            : '{{site.baseurl}}/assets/js/particles.json';
+
+        particlesJS.load('particles-js', particlesConfig, function () {
+            console.log('callback - particles.js config loaded');
+        });
+    }
+
+    loadParticlesForTheme(document.documentElement.getAttribute('data-theme') || 'dark');
+</script>
+
+<script>
+    (function () {
+        var storageKey = 'theme-preference';
+        var root = document.documentElement;
+
+        function currentTheme() {
+            return root.getAttribute('data-theme') || 'dark';
+        }
+
+        function updateToggleUi(theme) {
+            var icon = document.getElementById('theme-toggle-icon');
+            var label = document.getElementById('theme-toggle-label');
+            if (icon) {
+                icon.className = theme === 'light' ? 'fa fa-moon-o' : 'fa fa-sun-o';
+            }
+            if (label) {
+                label.textContent = theme === 'light' ? 'Dark' : 'Light';
+            }
+        }
+
+        function setTheme(theme, persist) {
+            root.classList.add('theme-switching');
+            root.setAttribute('data-theme', theme);
+            if (persist) {
+                try {
+                    localStorage.setItem(storageKey, theme);
+                } catch (e) {
+                    // Ignore storage failures in private browsing modes.
+                }
+            }
+            updateToggleUi(theme);
+            loadParticlesForTheme(theme);
+
+            requestAnimationFrame(function () {
+                requestAnimationFrame(function () {
+                    root.classList.remove('theme-switching');
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            updateToggleUi(currentTheme());
+
+            var toggle = document.getElementById('theme-toggle');
+            if (toggle) {
+                toggle.addEventListener('click', function () {
+                    var next = currentTheme() === 'light' ? 'dark' : 'light';
+                    setTheme(next, true);
+                });
+            }
+
+            // Initialize research table controls only when on pages containing the table.
+            if (window.jQuery && document.getElementById('research_table')) {
+                var $ = window.jQuery;
+                var searchInput = $('#research-search');
+                var searchButton = $('#research-search-btn');
+                var sortSelect = $('#research-sort');
+                var tableBodyRows = $('#research_table tbody tr');
+                var researchTable = null;
+
+                function applySearch(value) {
+                    if (researchTable) {
+                        researchTable.search(value).draw();
+                        return;
+                    }
+
+                    var needle = String(value || '').toLowerCase();
+                    tableBodyRows.each(function () {
+                        var haystack = $(this).text().toLowerCase();
+                        $(this).toggle(haystack.indexOf(needle) !== -1);
+                    });
+                }
+
+                function applySort(option) {
+                    if (researchTable) {
+                        if (option === 'year_desc') researchTable.order([0, 'desc']).draw();
+                        if (option === 'year_asc') researchTable.order([0, 'asc']).draw();
+                        if (option === 'title_asc') researchTable.order([1, 'asc']).draw();
+                        if (option === 'title_desc') researchTable.order([1, 'desc']).draw();
+                        return;
+                    }
+
+                    var rows = tableBodyRows.get();
+                    rows.sort(function (a, b) {
+                        var aYear = parseInt($(a).children('td').eq(0).text(), 10) || 0;
+                        var bYear = parseInt($(b).children('td').eq(0).text(), 10) || 0;
+                        var aTitle = $(a).children('td').eq(1).text().trim().toLowerCase();
+                        var bTitle = $(b).children('td').eq(1).text().trim().toLowerCase();
+
+                        if (option === 'year_desc') return bYear - aYear;
+                        if (option === 'year_asc') return aYear - bYear;
+                        if (option === 'title_asc') return aTitle.localeCompare(bTitle);
+                        if (option === 'title_desc') return bTitle.localeCompare(aTitle);
+                        return 0;
+                    });
+
+                    $('#research_table tbody').append(rows);
+                }
+
+                function appendSearchTerm(term) {
+                    var current = searchInput.val();
+                    searchInput.val((current ? current + ' ' : '') + term);
+                    applySearch(searchInput.val());
+                }
+
+                if ($.fn.DataTable) {
+                    try {
+                        researchTable = $('#research_table').DataTable({
+                            order: [[0, 'desc']],
+                            aLengthMenu: [[15, -1], [15, 'All']],
+                            pageLength: 15,
+                            searching: true,
+                            dom: 'rtip'
+                        });
+                    } catch (err) {
+                        console.error('DataTable init failed:', err);
+                    }
+                }
+
+                searchInput.on('keyup input', function () {
+                    applySearch($(this).val());
+                });
+
+                searchButton.on('click', function () {
+                    applySearch(searchInput.val());
+                });
+
+                sortSelect.on('change', function () {
+                    applySort($(this).val());
+                });
+
+                $('.research-tag-btn').on('click', function () {
+                    appendSearchTerm($(this).data('term'));
+                });
+
+                if (researchTable) {
+                    searchInput.val(researchTable.search());
+                }
+
+                applySort(sortSelect.val());
+            }
+        });
+    })();
 </script>

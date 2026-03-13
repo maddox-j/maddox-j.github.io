@@ -1,4 +1,4 @@
-<h2 style="text-align: center; margin-top: -150px;"> Research
+<h2 class="section-title"> Research
     <details class="research_details">
         <summary> Read research overview</summary>
         <div class="research_details_text">
@@ -27,71 +27,34 @@
 </h2>
 
 <script>
-    $(document).ready(function () {
-        $('#research_table').DataTable({
-            "order": [[0, "desc"]],
-            "aLengthMenu": [[15, -1], [15, "All"]],
-            "pageLength": "15",
-            dom: 'Bfrtip',
-            buttons: [
-                {
-                    text: '🌀 deep learning',
-                    action: function (e, dt, node, config) {
-                        $(".dataTables_wrapper input").val(function () {
-                            return this.value + "🌀";
-                        });
-                    }
-                },
-                {
-                    text: '🗣️ nlp',
-                    action: function (e, dt, node, config) {
-                        $(".dataTables_wrapper input").val(function () {
-                            return this.value + "🗣️";
-                        });
-                    }
-                },
-                {
-                    text: '💻 open-source ML',
-                    action: function (e, dt, node, config) {
-                        $(".dataTables_wrapper input").val(function () {
-                            return this.value + "💻";
-                        });
-                    }
-                },
-                {
-                    text: '🌳 efficiency',
-                    action: function (e, dt, node, config) {
-                        $(".dataTables_wrapper input").val(function () {
-                            return this.value + "🌳";
-                        });
-                    }
-                },
-                {
-                    text: '🔖 position',
-                    action: function (e, dt, node, config) {
-                        $(".dataTables_wrapper input").val(function () {
-                            return this.value + "🔖";
-                        });
-                    }
-                },
-                {
-                    text: '📈 optimisation',
-                    action: function (e, dt, node, config) {
-                        $(".dataTables_wrapper input").val(function () {
-                            return this.value + "📈";
-                        });
-                    }
-                },
-            ]
-        });
-    });
-
     // When the user clicks on <div>, open the popup
     function popup() {
         var popup = document.getElementById("myPopup");
         popup.classList.toggle("show");
     }
 </script>
+
+<div class="research-search-row">
+    <label for="research-search">search papers:</label>
+    <input id="research-search" type="search" placeholder="try: federated, optimisation, 🌀, 🔖">
+    <button id="research-search-btn" type="button">search</button>
+    <label for="research-sort" class="research-sort-label">order by:</label>
+    <select id="research-sort">
+        <option value="year_desc">year (newest)</option>
+        <option value="year_asc">year (oldest)</option>
+        <option value="title_asc">paper name (a-z)</option>
+        <option value="title_desc">paper name (z-a)</option>
+    </select>
+</div>
+
+<div class="research-tags-row">
+    <button type="button" class="research-tag-btn" data-term="🌀">🌀 deep learning</button>
+    <button type="button" class="research-tag-btn" data-term="🗣️">🗣️ nlp</button>
+    <button type="button" class="research-tag-btn" data-term="💻">💻 open-source ML</button>
+    <button type="button" class="research-tag-btn" data-term="🌳">🌳 efficiency</button>
+    <button type="button" class="research-tag-btn" data-term="🔖">🔖 position</button>
+    <button type="button" class="research-tag-btn" data-term="📈">📈 optimisation</button>
+</div>
 
 <table id="research_table" class="display" style="width:100%">
     <thead>
@@ -160,7 +123,7 @@
                     2025 Workshop
                     on Foundation Models in the Wild</a></td>
             <td class="big"><a target="_blank" href="https://github.com/IST-DASLab/PanzaMail"><i
-                        class="fa fa-github fa-fw"></i></a>
+                        class="fa fa-github fa-fw"></i></a></td>
             <td class="med">
                 <a target="_blank" href="https://www.youtube.com/watch?v=Yn96riyPx2k&t=28s"><i></i>bonus video</a>
             </td>
@@ -174,7 +137,7 @@
             <td class="center"><a target="_blank"
                     href="https://www.mlmi.eng.cam.ac.uk/files/2023-2024/jovanovic_second-order_2024.pdf">MPhil Thesis @
                     Cambridge</a></td>
-            <td class="big"><a></a>
+            <td class="big"><a></a></td>
             <td class="med">
                 <a></a>
             </td>
@@ -188,7 +151,7 @@
             <td class="center"><a target="_blank" href="https://openreview.net/forum?id=9akS9IBfKs">NLP-OSS @
                     EMNLP2023</a></td>
             <td class="big"><a target="_blank" href="https://github.com/maddox-j/rumour_detection_in_the_wild"><i
-                        class="fa fa-github fa-fw"></i></a>
+                        class="fa fa-github fa-fw"></i></a></td>
             <td class="med">
                 <a target="_blank" href="https://aclanthology.org/2023.nlposs-1.15/"><i></i>ACL</a>
             </td>
@@ -201,7 +164,7 @@
             <td class="med">🌳🌀</td>
             <td class="center"><a target="_blank" href="https://arxiv.org/abs/2309.05357">arxiv preprint</a></td>
             <td class="big"><a target="_blank" href="https://github.com/EDAC-ML4H/EDAC-ML4H"><i
-                        class="fa fa-github fa-fw"></i></a>
+                        class="fa fa-github fa-fw"></i></a></td>
             <td class="med">
                 <div class="popup" onmouseover="popup()" onmouseout="popup()">More info...
                     <span class="popuptext" id="myPopup">Awarded second place IBM prize in MLP course awards at
@@ -214,6 +177,56 @@
 </table>
 
 <style>
+    .research-search-row {
+        margin: 10px 0 16px;
+    }
+
+    .research-search-row label {
+        margin-right: 10px;
+        font-size: medium;
+        text-transform: lowercase;
+        color: var(--muted-text-color);
+    }
+
+    .research-sort-label {
+        margin-left: 14px;
+    }
+
+    #research-search {
+        width: min(100%, 440px);
+        padding: 8px 10px;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        background: var(--surface-color);
+        color: var(--text-color);
+    }
+
+    #research-search-btn,
+    #research-sort,
+    .research-tag-btn {
+        padding: 8px 10px;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        background: var(--surface-color);
+        color: var(--text-color);
+        text-transform: lowercase;
+    }
+
+    #research-search-btn {
+        margin-left: 8px;
+    }
+
+    .research-tags-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 0 0 14px;
+    }
+
+    .research-tag-btn {
+        font-size: 14px;
+    }
+
     .big {
         font-size: large;
         text-align: center;
@@ -233,10 +246,31 @@
     }
 
     .dt-button span {
-        color: white;
+        color: var(--text-color);
         font-family: Lora, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
     }
+
+    .dataTables_wrapper .dataTables_filter {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        .research-search-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
+
+        #research-search-btn {
+            margin-left: 0;
+        }
+
+        .research-sort-label {
+            margin-left: 0;
+        }
+    }
+
 </style>
 <style>
     .popup {

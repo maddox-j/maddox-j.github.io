@@ -1,4 +1,19 @@
 <!--<head>-->
+<script>
+	(function () {
+		var storedTheme = null;
+		try {
+			storedTheme = localStorage.getItem('theme-preference');
+		} catch (e) {
+			storedTheme = null;
+		}
+
+		var systemPrefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+		var resolvedTheme = storedTheme || (systemPrefersLight ? 'light' : 'dark');
+
+		document.documentElement.setAttribute('data-theme', resolvedTheme);
+	})();
+</script>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
