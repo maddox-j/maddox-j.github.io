@@ -50,6 +50,24 @@
     line-height: 1.75;
 }
 
+/* Make embedded media in markdown responsive across viewport sizes. */
+.markdown iframe,
+.markdown video,
+.markdown object,
+.markdown embed {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: clamp(240px, 56vw, 520px);
+    margin: 1.2rem 0;
+    border: 0;
+}
+
+.markdown img {
+    max-width: 100%;
+    height: auto;
+}
+
 .markdown code {
     font-size: 0.95em;
 }
