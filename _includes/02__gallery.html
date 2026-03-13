@@ -1,4 +1,4 @@
-<div class="container roww" style="margin-left: 20%; margin-right: 10%;">
+<div class="container roww gallery-container">
     <!-- <div class="gallery">
         <a href="{{ site.baseurl }}/notes/edac.html">
             <img src="{{ site.baseurl }}/assets/img/pruning.gif" style="filter: invert()">
@@ -19,29 +19,41 @@
         <div class="desc">justeatcycles covid-19 analysis</div>
     </div> -->
     <style>
-        div.gallery {
+        .gallery-container .gallery {
             margin: 2px;
             /*border: 1px solid #ccc;*/
             float: left;
-            width: 20%;
+            width: 31%;
         }
 
-        div.gallery:hover {
+        .gallery-container .gallery:hover {
             border: 1px solid #777;
         }
 
-        div.gallery img {
+        .gallery-container .gallery img {
             width: 100%;
             border-radius: 5%;
-            height: 230px;
+            height: auto;
             /*hieght: 100px;*/
             /*width: 300px;*/
         }
 
-        div.desc {
+        .gallery-container .desc {
             padding: 15px;
             text-align: center;
             font-size: medium;
+        }
+
+        @media (max-width: 991px) {
+            .gallery-container .gallery {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .gallery-container .gallery {
+                width: 100%;
+            }
         }
     </style>
 </div>

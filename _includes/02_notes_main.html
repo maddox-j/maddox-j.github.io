@@ -1,4 +1,4 @@
-<h2 align="center" style="margin-top: -150px;"> resources + posts </h2>
+<h2 class="section-title"> resources + posts </h2>
 
 <!--{% comment %}-->
 <!--{% include 02__carousel.html %}-->
@@ -6,16 +6,17 @@
 
 {% include 02__gallery.html %}
 
-</br>
-</br>
+<br>
+<br>
 <!--<div class="colfull">-->
 <!--    <p align="text-center">-->
 <!--        <i align="left">Some posts/slides organizing ml and ai research.</i>-->
 <!--    </p>-->
 <!--</div>-->
 
+<div class="roww">
 <div class="coll3">
-    <h3 align="center">presentations</h3>
+    <h3>presentations</h3>
     <ul class="list-items">
         <li><a href="{{ site.baseurl }}/notes/cohere-federated-learning.html" style="font-size:medium">
                 communication-efficient training for
@@ -32,7 +33,7 @@
 </div>
 
 <div class="coll3">
-    <h3 align="center">teaching</h3>
+    <h3>teaching</h3>
     <ul class="list-items">
         <li><a href="{{ site.baseurl }}/notes/cohere-playbooks.html" style="font-size:medium"> smol and ultra-scale
                 training
@@ -51,7 +52,7 @@
 </div>
 
 <div class="coll3">
-    <h3 align="center">miscellaneous projects</h3>
+    <h3>miscellaneous projects</h3>
     <ul class="list-items">
         <li><a href="{{ site.baseurl }}/notes/ml-theory.html" style="font-size:medium"> community lead for ml theory at
                 cohere labs
@@ -68,76 +69,4 @@
     </ul>
 
 </div>
-<style>
-    .colfull {
-        float: left;
-        width: 100%;
-        padding-bottom: 5px;
-        text-align: center;
-    }
-
-    .coll {
-        float: left;
-        width: 33.33%;
-        padding-bottom: 50px;
-        text-align: center;
-    }
-
-    .coll2 {
-        float: left;
-        width: 49.9%;
-        padding-bottom: 50px;
-        text-align: center;
-    }
-
-    .coll3 {
-        float: left;
-        width: 32.9%;
-        padding-bottom: 50px;
-        text-align: center;
-    }
-
-    .coll4 {
-        float: left;
-        width: 24.9%;
-        padding-bottom: 50px;
-        text-align: center;
-    }
-
-    .coll5 {
-        float: left;
-        width: 19.99%;
-        padding-bottom: 50px;
-    }
-
-    .coll6 {
-        float: left;
-        width: 16.66%;
-        padding-bottom: 50px;
-    }
-
-    .coll9 {
-        float: left;
-        width: 11.11%;
-        padding-bottom: 50px;
-    }
-
-    .coll10 {
-        float: left;
-        width: 10%;
-        padding-bottom: 50px;
-    }
-
-
-    /* Clear floats after the columns */
-    .roww:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    .list-items {
-        display: inline-block;
-        text-align: left;
-    }
-</style>
+</div>

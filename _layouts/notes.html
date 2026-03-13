@@ -1,74 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     {% include head.html %}
-    {% include navigation.html %}
     {% include google_analytics.html %}
-    {% include js.html %}
     <link href="{{ site.baseurl }}/assets/css/notes.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/assets/css/highlight_androidstudio.css" rel="stylesheet">
     <script src="{{ site.baseurl }}/assets/js/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+        .markdown p,
+        .markdown li,
+        .markdown ul {
+            font-size: large;
+        }
+
+        #markdown-toc {
+            display: none;
+        }
+
+        .highlight {
+            background-color: var(--surface-color);
+            border-color: var(--surface-color);
+        }
+    </style>
 </head>
 
-<body data-spy="scroll" data-target=".sidebar">
-    <div class="wrapper">
-        <div class="sidenav navbar">
-            <div id="toc"></div>
-        </div>
+<body id="page-top" data-spy="scroll" data-target=".sidebar">
+    {% include navigation.html %}
 
-        <div class="main" style="margin-right: 15%;">
+    <div class="wrapper">
+        <aside class="sidenav navbar">
+            <div id="toc"></div>
+        </aside>
+
+        <main class="main">
             <div id="content" class="markdown">
-                <p class="title" style="font-size: 60px"> {{ page.title | downcase }} </p>
-                <div style="width:25px; display:inline-block; height:auto;"></div>
-                <a class="btn btn-success" style="float:left;   text-transform: lowercase;"
+                <h1 class="title">{{ page.title }}</h1>
+                <a class="btn btn-success notes-source-link"
                     href="https://github.com/maddox-j/maddox-j.github.io/blob/main/{{ page.path }}">view markdown <i
                         class="fa fa-github fa-fw"></i></a>
 
-                <br />
-                <br />
+                <div class="clearfix"></div>
                 <hr>
                 {{ page.content | markdownify }}
             </div>
-        </div>
-
+        </main>
     </div>
+
+    {% include js.html %}
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+        MathJax.Hub.Config({
+            tex2jax: {
+             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+             processEscapes: true
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#toc').toc();
+        });
+    </script>
 
 </body>
 
-<style>
-    .markdown p,
-    li,
-    ul {
-        font-size: large;
-    }
-
-    #markdown-toc {
-        display: none;
-    }
-</style>
-
-<!--js-->
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
-    MathJax.Hub.Config({
-        tex2jax: {
-         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-         processEscapes: true
-        }
-    });
-</script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-    type="text/javascript"></script>
-
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#toc').toc();
-    });
-</script>
-
-<style>
-    .highlight {
-        background-color: black;
-        border-color: black;
-    }
-</style>
+</html>

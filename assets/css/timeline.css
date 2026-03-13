@@ -73,6 +73,25 @@
     line-height: 14px;
 }
 
+.timeline>li .timeline-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.timeline>li .timeline-image img.timeline-logo-fit {
+    object-fit: contain;
+    background: #fff;
+    padding: 6px;
+}
+
+.timeline>li .timeline-image img.timeline-logo-combo {
+    object-fit: contain;
+    background: #fff;
+    padding: 10px;
+}
+
 .timeline>li.timeline-inverted>.timeline-panel {
     float: right;
     padding: 0 20px 0 100px;
@@ -195,5 +214,11 @@
 
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 100px 20px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .timeline>li .timeline-image img.timeline-logo-combo {
+        padding: 8px;
     }
 }
