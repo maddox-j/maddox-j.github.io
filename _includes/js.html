@@ -20,6 +20,8 @@
 
 <script src="{{site.baseurl}}/assets/js/particles.min.js"></script>
 <script>
+    var activeParticlesConfig = null;
+
     function loadParticlesForTheme(theme) {
         if (!window.particlesJS || !document.getElementById('particles-js')) {
             return;
@@ -28,6 +30,12 @@
         var particlesConfig = theme === 'light'
             ? '{{site.baseurl}}/assets/js/particles-light.json'
             : '{{site.baseurl}}/assets/js/particles.json';
+
+        if (activeParticlesConfig === particlesConfig) {
+            return;
+        }
+
+        activeParticlesConfig = particlesConfig;
 
         particlesJS.load('particles-js', particlesConfig, function () {
             console.log('callback - particles.js config loaded');

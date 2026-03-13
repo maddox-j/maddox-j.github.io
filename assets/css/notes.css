@@ -27,13 +27,13 @@
 
 .markdown h1 {
     font-size: clamp(2.1rem, 4.6vw, 3.4rem);
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 0.25em;
 }
 
 .markdown h2 {
     font-size: clamp(1.7rem, 3.7vw, 2.5rem);
-    border-bottom: 1px solid #1d1d1d;
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 0.2em;
 }
 
