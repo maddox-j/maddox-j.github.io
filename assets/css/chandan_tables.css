@@ -73,8 +73,8 @@ table.dataTable tbody td,
 :root[data-theme='light'] .dataTables_wrapper .dataTables_info,
 :root[data-theme='light'] .dataTables_wrapper .dataTables_length,
 :root[data-theme='light'] .dataTables_wrapper .dataTables_paginate {
-    background: #fff !important;
-    color: #111 !important;
+    background: var(--surface-color) !important;
+    color: var(--text-color) !important;
 }
 
 :root:not([data-theme='light']) table.dataTable,
@@ -88,8 +88,8 @@ table.dataTable tbody td,
 :root:not([data-theme='light']) .dataTables_wrapper .dataTables_info,
 :root:not([data-theme='light']) .dataTables_wrapper .dataTables_length,
 :root:not([data-theme='light']) .dataTables_wrapper .dataTables_paginate {
-    background: #000 !important;
-    color: #f7f7f7 !important;
+    background: var(--surface-color) !important;
+    color: var(--text-color) !important;
 }
 
 @media (max-width: 767px) {

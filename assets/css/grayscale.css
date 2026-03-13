@@ -127,7 +127,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active {
-    outline: nonte;
+    outline: none;
     background-color: var(--surface-elevated);
 }
 

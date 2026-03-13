@@ -19,5 +19,5 @@
 .item h4,
 .item h2,
 .item h5 {
-    background-color: black;
+  background-color: var(--surface-color);
 }
