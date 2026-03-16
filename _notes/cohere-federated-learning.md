@@ -1,7 +1,15 @@
 ---
 layout: notes
 title: communication-efficient training for foundation models through federated learning.
-description: 
+description: Guest talk at Cohere Labs Open Science Community on communication-efficient training and federated learning at scale.
+seo_type: VideoObject
+image: https://img.youtube.com/vi/T-HXW6wBQ10/hqdefault.jpg
+video_name: Communication-Efficient Training for Foundation Models Through Federated Learning
+video_description: Guest talk at Cohere Labs Open Science Community on why federated learning can be effective for large-scale foundation model training.
+video_thumbnail: https://img.youtube.com/vi/T-HXW6wBQ10/hqdefault.jpg
+video_upload_date: "2025-01-01"
+video_embed_url: https://www.youtube.com/embed/T-HXW6wBQ10
+video_content_url: https://www.youtube.com/watch?v=T-HXW6wBQ10
 ---
 Very humbled to be have been invited by my good friend [Harsha](https://nelaturuharsha.github.io/){:target="_blank"} as a guest speaker at ML-Efficiency Interest group at the [Cohere Labs Open Science Community](https://cohere.com/research/open-science){:target="_blank"}. I gave a talk covering the historical context of why federated learning methods can be effective in training foundation models. The full abstract can be seen here:
 

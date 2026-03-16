@@ -12,4 +12,4 @@ I had the wonderful opportunity to be invited as a guest speaker at the inaugura
     width="910"
     height="500"
     src="{{ site.baseurl }}/assets/slides/uct_slides_why_greatness_cannot_be_planned.pdf">
-</iframe>`
+</iframe>

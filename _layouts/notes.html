@@ -8,6 +8,25 @@
     <link href="{{ site.baseurl }}/assets/css/highlight_androidstudio.css" rel="stylesheet">
     <script src="{{ site.baseurl }}/assets/js/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+        {% if page.video_embed_url %}
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": {{ page.video_name | default: page.title | jsonify }},
+            "description": {{ page.video_description | default: page.description | default: site.description | strip_html | strip_newlines | jsonify }},
+            "thumbnailUrl": [{{ page.video_thumbnail | absolute_url | jsonify }}],
+            "uploadDate": {{ page.video_upload_date | jsonify }},
+            "embedUrl": {{ page.video_embed_url | jsonify }},
+            "contentUrl": {{ page.video_content_url | default: page.video_embed_url | jsonify }},
+            "publisher": {
+                "@type": "Person",
+                "name": {{ site.author | jsonify }},
+                "url": {{ site.url | jsonify }}
+            }
+        }
+        </script>
+        {% endif %}
     <style>
         .markdown p,
         .markdown li,

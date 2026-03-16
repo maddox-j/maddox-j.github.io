@@ -1,0 +1,21 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    {% assign video_notes = site.notes | where_exp: "item", "item.video_embed_url" %}
+    {% for page in video_notes %}
+    <url>
+        <loc>{{ page.url | absolute_url }}</loc>
+        <video:video>
+            <video:thumbnail_loc>{{ page.video_thumbnail | absolute_url }}</video:thumbnail_loc>
+            <video:title>{{ page.video_name | default: page.title | xml_escape }}</video:title>
+            <video:description>{{ page.video_description | default: page.description | default: site.description | strip_html | strip_newlines | xml_escape }}</video:description>
+            <video:content_loc>{{ page.video_content_url }}</video:content_loc>
+            <video:player_loc allow_embed="yes">{{ page.video_embed_url }}</video:player_loc>
+            {% if page.video_upload_date %}<video:publication_date>{{ page.video_upload_date }}</video:publication_date>{% endif %}
+        </video:video>
+    </url>
+    {% endfor %}
+</urlset>
