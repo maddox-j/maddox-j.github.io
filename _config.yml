@@ -1,11 +1,26 @@
 url: https://andrej.jovanovic.co.za
 baseurl: ""
+lang: en
 
 # Site Settings
 title: Andrej Jovanović
 author: Andrej Jovanović
 description: "A budding machine learning researcher who is passionate about efficient and secure solutions."
 keywords: "Distributed Machine Learning, Efficient Machine Learning, NLP, "
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/detailed_front.jpeg
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      seo_type: Article
 collections:
  blog:
     name: blog
