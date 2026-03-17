@@ -20,3 +20,7 @@ Our intention is to use the textbook as a guide to introduce key concepts, from 
 
 <iframe src="https://drive.google.com/file/d/1zvcanuEpN73COA2LOCLCGqLFdJ9hemuy/preview" width="910" height="500" allow="autoplay"></iframe>
 
+## Session Three: An Overview of Attention in the Transformer
+
+<iframe src="https://drive.google.com/file/d/1lhmHxh5TFapvsi2Plc4Bclxw8RhZv5k2/preview" width="910" height="500" allow="autoplay"></iframe>
+
