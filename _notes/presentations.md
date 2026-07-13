@@ -13,7 +13,7 @@ title: Presentations
 
 <div class="presentation-card">
     <h3><a href="{{ site.baseurl }}/notes/cohere-federated-learning.html" style="color: inherit; text-decoration: none;">Communication-efficient training for foundation models through federated learning</a></h3>
-    <span class="card-meta">Cohere Labs Open Science Community — invited by Harsha</span>
+    <span class="card-meta">Cohere Labs Open Science Community</span>
     <p class="card-desc">Covers the historical context of why federated learning methods can be effective for large-scale foundation model training — introducing the promise of federated learning from seminal works to state-of-the-art systems competitive with centralised training. <a href="{{ site.baseurl }}/notes/cohere-federated-learning.html">Watch talk →</a></p>
 </div>
 

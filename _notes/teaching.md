@@ -32,7 +32,7 @@ title: Teaching
 <div class="teaching-card">
     <h3><span class="card-role">Teaching Assistant</span> — EEML</h3>
     <span class="card-meta">Sarajevo, Bosnia and Herzegovina · July 2025</span>
-    <p class="card-desc">Assisted with tutorials on Large Language Models, Reinforcement Learning, and Computer Vision at the Eastern European Machine Learning Summer School.</p>
+    <p class="card-desc">Assisted with tutorials on Large Language Models, Reinforcement Learning, and Computer Vision at the Eastern European Machine Learning (EEML) Summer School.</p>
 </div>
 
 <div class="teaching-card">
@@ -50,7 +50,7 @@ title: Teaching
 <div class="teaching-card">
     <h3><span class="card-role">Teaching Material</span> — Smol and Ultra-Scale Training</h3>
     <span class="card-meta">Cohere Labs Open Science Community, ML Systems & Theory Group</span>
-    <p class="card-desc">As co-lead for the ML Systems & Theory interest group at Cohere Labs, I led a deep dive into HuggingFace's smol and ultra-scale training playbooks — covering key systems and theory concepts in machine learning. <a href="{{ site.baseurl }}/notes/cohere-playbooks.html">Watch sessions →</a></p>
+    <p class="card-desc">A deep dive into HuggingFace's smol and ultra-scale training playbooks, covering key systems and theory concepts in machine learning. <a href="{{ site.baseurl }}/notes/cohere-playbooks.html">Watch sessions →</a></p>
 </div>
 
 </div>
