@@ -8,7 +8,7 @@ title: Presentations
 <div class="presentation-card">
     <h3><a href="{{ site.baseurl }}/notes/iclr-protocol-learning.html" style="color: inherit; text-decoration: none;">Distributed Training via Local Updates and Infrequent Communication</a></h3>
     <span class="card-meta">Protocol Learning Workshop, ICLR 2026</span>
-    <p class="card-desc">Talk on communication-efficient training approaches for foundation models using federated learning.</p>
+    <p class="card-desc">Talk on communication-efficient training approaches for foundation models using federated learning. <a href="{{ site.baseurl }}/notes/iclr-protocol-learning.html">Watch talk →</a></p>
 </div>
 
 <div class="presentation-card">
@@ -20,7 +20,7 @@ title: Presentations
 <div class="presentation-card">
     <h3><a href="{{ site.baseurl }}/notes/rditw.html" style="color: inherit; text-decoration: none;">Rumour detection in the wild: a browser extension for twitter</a></h3>
     <span class="card-meta">NLP-OSS Workshop, EMNLP 2023</span>
-    <p class="card-desc">A lightning talk on a browser extension for real-time rumour detection on Twitter.</p>
+    <p class="card-desc">A lightning talk on a browser extension for real-time rumour detection on Twitter. <a href="{{ site.baseurl }}/notes/rditw.html">Watch talk →</a></p>
 </div>
 
 <div class="presentation-card">

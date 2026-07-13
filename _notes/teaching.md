@@ -44,13 +44,13 @@ title: Teaching
 <div class="teaching-card">
     <h3><span class="card-role">Tutorial Leader</span> — N-gram Language Modelling Tutorial</h3>
     <span class="card-meta">UCT AI Society, Remote · Aug 2023</span>
-    <p class="card-desc">Delivered a tutorial on language modelling using n-gram models. <a href="{{ site.baseurl }}/notes/ngram.html">View resources →</a></p>
+    <p class="card-desc">Delivered a tutorial on language modelling using n-gram models. <a href="{{ site.baseurl }}/notes/ngram.html">Watch tutorial →</a></p>
 </div>
 
 <div class="teaching-card">
     <h3><span class="card-role">Teaching Material</span> — Smol and Ultra-Scale Training</h3>
     <span class="card-meta">Cohere Labs Open Science Community, ML Systems & Theory Group</span>
-    <p class="card-desc">As co-lead for the ML Systems & Theory interest group at Cohere Labs, I led a deep dive into HuggingFace's smol and ultra-scale training playbooks — covering key systems and theory concepts in machine learning. <a href="{{ site.baseurl }}/notes/cohere-playbooks.html">View session recordings →</a></p>
+    <p class="card-desc">As co-lead for the ML Systems & Theory interest group at Cohere Labs, I led a deep dive into HuggingFace's smol and ultra-scale training playbooks — covering key systems and theory concepts in machine learning. <a href="{{ site.baseurl }}/notes/cohere-playbooks.html">Watch sessions →</a></p>
 </div>
 
 </div>
