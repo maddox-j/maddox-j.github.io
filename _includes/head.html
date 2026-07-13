@@ -6,6 +6,14 @@
 {% assign seo_image = page.image | default: site.image | prepend: site.baseurl | prepend: site.url %}
 <script>
 	(function () {
+		// Redirect URLs with ?ref= query parameter to clean URL (avoid duplicate content in search engines)
+		var params = new URLSearchParams(window.location.search);
+		if (params.has('ref')) {
+			var cleanPath = window.location.pathname + window.location.hash;
+			window.location.replace(window.location.origin + cleanPath);
+			return;
+		}
+
 		var storedTheme = null;
 		try {
 			storedTheme = localStorage.getItem('theme-preference');
