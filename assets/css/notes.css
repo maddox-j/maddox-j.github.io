@@ -220,6 +220,85 @@ img {
     }
 }
 
+.teaching-cards,
+.presentations-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 20px 0;
+}
+
+.teaching-card,
+.presentation-card {
+    width: min(100%, 820px);
+    padding: 18px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--surface-elevated);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.teaching-card h3,
+.presentation-card h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.teaching-card .card-role,
+.presentation-card .card-role {
+    display: inline-block;
+    font-weight: 600;
+    color: var(--accent-color, #5bc0de);
+}
+
+.teaching-card .card-meta,
+.presentation-card .card-meta {
+    display: block;
+    color: var(--muted-text-color);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.teaching-card .card-desc,
+.presentation-card .card-desc {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.teaching-card .card-desc ul {
+    margin: 6px 0 0;
+    padding-left: 20px;
+}
+
+.teaching-card .card-desc ul li {
+    margin-bottom: 3px;
+}
+
+.teaching-card .card-sublinks {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+
+.teaching-card .card-sublinks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.teaching-card .card-sublinks ul li {
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+.teaching-card .card-sublinks ul li::before {
+    content: "→ ";
+    color: var(--accent-color, #5bc0de);
+    font-weight: 600;
+}
+
 @media (max-width: 767px) {
     .title {
         line-height: 1.08;
@@ -241,5 +320,10 @@ img {
     .notes-source-link {
         width: 100%;
         text-align: center;
+    }
+
+    .teaching-card,
+    .presentation-card {
+        padding: 14px 16px;
     }
 }
