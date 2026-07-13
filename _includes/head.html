@@ -1,6 +1,7 @@
 <!--<head>-->
 {% assign seo_title = page.title | default: site.title %}
-{% assign seo_description = page.description | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+{% assign seo_description = page.description | default: site.description | strip_html | strip_newlines | truncate: 160
+%}
 {% assign canonical_url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
 {% assign seo_image = page.image | default: site.image | prepend: site.baseurl | prepend: site.url %}
 <script>
@@ -31,7 +32,8 @@
 <meta property="og:title" content="{{ seo_title }}" />
 <meta property="og:description" content="{{ seo_description }}" />
 <meta property="og:url" content="{{ canonical_url }}" />
-<meta property="og:type" content="{% if page.seo_type %}{{ page.seo_type }}{% elsif page.layout == 'notes' %}article{% else %}website{% endif %}" />
+<meta property="og:type"
+	content="{% if page.seo_type %}{{ page.seo_type }}{% elsif page.layout == 'notes' %}article{% else %}website{% endif %}" />
 <meta property="og:image" content="{{ seo_image }}" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ seo_title }}" />
@@ -39,7 +41,7 @@
 <meta name="twitter:image" content="{{ seo_image }}" />
 <link rel="canonical" href="{{ canonical_url }}">
 <link rel='shortcut icon' href='{{ site.baseurl }}/assets/img/codefavicon.ico' type='image/x-icon'>
-<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<title>Andrej Jovanović | Machine Learning Researcher</title>
 
 <!-- Bootstrap Core CSS -->
 

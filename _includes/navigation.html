@@ -26,18 +26,26 @@
 
                 {% if page.url contains 'notes' or page.url contains 'projects' or page.url contains 'blog' or page.url
                 contains 'ovw' or page.url contains 'pres'%}
+                <li><a class="page-scroll" href="{{site.baseurl}}/#updates">Updates</a></li>
                 <li><a class="page-scroll" href="{{site.baseurl}}/#research">Research</a></li>
-                <li><a class="page-scroll" href="{{site.baseurl}}/#notes_main">Projects</a></li>
                 <li><a class="page-scroll" href="{{site.baseurl}}/#education">Education</a></li>
                 <li><a class="page-scroll" href="{{site.baseurl}}/#experience">Experience</a></li>
+                <li><a class="page-scroll" href="{{site.baseurl}}/#academic-service">Academic Service</a></li>
                 <li><a class="page-scroll" href="{{site.baseurl}}/#collaboration">Collaboration</a></li>
+                <li class="nav-divider" aria-hidden="true"></li>
+                <li><a class="page-scroll" href="{{site.baseurl}}/notes/presentations.html">Presentations</a></li>
+                <li><a class="page-scroll" href="{{site.baseurl}}/notes/teaching.html">Teaching</a></li>
 
                 {% else %}
+                <li><a class="page-scroll" href="#updates">Updates</a></li>
                 <li><a class="page-scroll" href="#research">Research</a></li>
-                <li><a class="page-scroll" href="#notes_main">Projects</a></li>
                 <li><a class="page-scroll" href="#education">Education</a></li>
                 <li><a class="page-scroll" href="#experience">Experience</a></li>
+                <li><a class="page-scroll" href="#academic-service">Academic Service</a></li>
                 <li><a class="page-scroll" href="#collaboration">Collaboration</a></li>
+                <li class="nav-divider" aria-hidden="true"></li>
+                <li><a class="page-scroll" href="{{site.baseurl}}/notes/presentations.html">Presentations</a></li>
+                <li><a class="page-scroll" href="{{site.baseurl}}/notes/teaching.html">Teaching</a></li>
                 {% endif %}
 
                 <li class="nav-theme-toggle">

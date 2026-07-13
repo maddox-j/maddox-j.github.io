@@ -5,8 +5,8 @@ lang: en
 # Site Settings
 title: Andrej Jovanović
 author: Andrej Jovanović
-description: "A budding machine learning researcher who is passionate about efficient and secure solutions."
-keywords: "Distributed Machine Learning, Efficient Machine Learning, NLP, "
+description: "Machine learning researcher interested in distributed and efficient machine learning at the University of Cambridge and Flower Labs."
+keywords: "Distributed Machine Learning, Efficient Machine Learning, Compression, Distributed Training, Federated Learning, Deep Learning, Machine Learning, Artificial Intelligence, Self-Improving AI Systems, AI, ML"
 plugins:
   - jekyll-feed
   - jekyll-sitemap

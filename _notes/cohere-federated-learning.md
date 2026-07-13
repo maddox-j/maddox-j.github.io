@@ -9,6 +9,7 @@ video_description: Guest talk at Cohere Labs Open Science Community on why feder
 video_thumbnail: https://img.youtube.com/vi/T-HXW6wBQ10/hqdefault.jpg
 video_upload_date: "2025-01-01"
 video_embed_url: https://www.youtube.com/embed/T-HXW6wBQ10
+video_title: Guest Talk at Cohere Labs Open Science Community
 video_content_url: https://www.youtube.com/watch?v=T-HXW6wBQ10
 ---
 Very humbled to be have been invited by my good friend [Harsha](https://nelaturuharsha.github.io/){:target="_blank"} as a guest speaker at ML-Efficiency Interest group at the [Cohere Labs Open Science Community](https://cohere.com/research/open-science){:target="_blank"}. I gave a talk covering the historical context of why federated learning methods can be effective in training foundation models. The full abstract can be seen here:
@@ -17,6 +18,5 @@ Very humbled to be have been invited by my good friend [Harsha](https://nelaturu
 
 > However, a new paradigm of training, derived from the federated learning literature, has emerged as a promising, communication-efficient solution whilst not comprising on performance. Essentially, these methods alleviate communication costs by communicating infrequently. In this talk, I hope to introduce you to the promise of federated learning for large scale training, starting from seminal works, to state-of-the-art systems that are competitive with their centralised training counterparts.
 
-🔗: [Link to original post on Cohere Labs](https://cohere.com/events/Cohere-Labs-Andrej-Jovanovic-2025){:target="_blank"} 
+🔗: [Link to original post on Cohere Labs](https://cohere.com/events/Cohere-Labs-Andrej-Jovanovic-2025){:target="_blank"}
 
-<iframe src="https://www.youtube.com/embed/T-HXW6wBQ10" width="910" height="500" allow="autoplay"></iframe>

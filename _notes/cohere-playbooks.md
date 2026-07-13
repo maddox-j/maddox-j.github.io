@@ -9,6 +9,9 @@ video_description: Cohere Labs community session introducing key systems and the
 video_thumbnail: /assets/img/detailed_front.jpeg
 video_upload_date: "2025-01-01"
 video_embed_url: https://drive.google.com/file/d/1zvcanuEpN73COA2LOCLCGqLFdJ9hemuy/preview
+video_title: "Session One: An Introduction to Training and Memory-Overheads"
+video_embed_url_2: https://drive.google.com/file/d/1lhmHxh5TFapvsi2Plc4Bclxw8RhZv5k2/preview
+video_title_2: "Session Three: An Overview of Attention in the Transformer"
 video_content_url: https://drive.google.com/file/d/1zvcanuEpN73COA2LOCLCGqLFdJ9hemuy/view
 ---
 
@@ -16,11 +19,4 @@ In my capacity as a co-lead for the ML Systems & Theory interest group at the Co
 
 Our intention is to use the textbook as a guide to introduce key concepts, from which we can dive deeper and focus on interesting research and key applications. Below, you will find the recordings of the sessions that I have delivered:
 
-## Session One: An Introduction To Training and Memory-Overheads.
-
-<iframe src="https://drive.google.com/file/d/1zvcanuEpN73COA2LOCLCGqLFdJ9hemuy/preview" width="910" height="500" allow="autoplay"></iframe>
-
-## Session Three: An Overview of Attention in the Transformer
-
-<iframe src="https://drive.google.com/file/d/1lhmHxh5TFapvsi2Plc4Bclxw8RhZv5k2/preview" width="910" height="500" allow="autoplay"></iframe>
 

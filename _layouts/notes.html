@@ -63,6 +63,34 @@
                 <div class="clearfix"></div>
                 <hr>
                 {{ page.content | markdownify }}
+                {% if page.video_embed_url %}
+                <div class="video-watch" itemscope itemtype="https://schema.org/VideoObject">
+                    <meta itemprop="name" content="{{ page.video_name | default: page.title }}">
+                    <meta itemprop="description"
+                        content="{{ page.video_description | default: page.description | default: site.description | strip_html | strip_newlines }}">
+                    <meta itemprop="thumbnailUrl" content="{{ page.video_thumbnail | absolute_url }}">
+                    <meta itemprop="uploadDate" content="{{ page.video_upload_date }}">
+                    <meta itemprop="embedUrl" content="{{ page.video_embed_url }}">
+                    <meta itemprop="contentUrl"
+                        content="{{ page.video_content_url | default: page.video_embed_url }}">
+                    <h2 class="video-watch-title">{{ page.video_title | default: page.video_name | default: page.title }}</h2>
+                    <div class="video-frame">
+                        {% if page.video_embed_url contains '.mp4' %}
+                        <video controls preload="metadata" itemprop="video" src="{{ page.video_embed_url }}"></video>
+                        {% else %}
+                        <iframe src="{{ page.video_embed_url }}" allow="autoplay; encrypted-media"
+                            referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                        {% endif %}
+                    </div>
+                    {% if page.video_embed_url_2 %}
+                    <h2 class="video-watch-title">{{ page.video_title_2 }}</h2>
+                    <div class="video-frame secondary">
+                        <iframe src="{{ page.video_embed_url_2 }}" allow="autoplay; encrypted-media"
+                            referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
             </div>
         </main>
     </div>
