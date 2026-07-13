@@ -12,12 +12,3 @@ video_embed_url: https://drive.google.com/file/d/1vw-pQ8U9ht3O5uHyH2rGYlUJgnK1VA
 video_title: N-gram Language Modelling Tutorial
 video_content_url: https://drive.google.com/file/d/1vw-pQ8U9ht3O5uHyH2rGYlUJgnK1VASb/view
 ---
-Partnering with the University of Cape Town AI Society. I delivered a brief tutorial on language modelling using n-gram models.
-
-Slides: <a href="https://github.com/maddox-j/uct-ngram-language-modelling" target="_blank">GitHub materials</a>
-<br>
-<iframe
-    width="910"
-    height="500"
-    src="{{ site.baseurl }}/assets/slides/uct_ngrams.pdf">
-</iframe>
