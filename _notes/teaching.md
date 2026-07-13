@@ -38,7 +38,7 @@ title: Teaching
 <div class="teaching-card">
     <h3><span class="card-role">Lead Author</span> — From Centralised to Decentralised Training: Federated Learning</h3>
     <span class="card-meta">Deep Learning Indaba, Dakar, Senegal · Sep 2024</span>
-    <p class="card-desc">Lead author of a practical session on <a href="https://github.com/deep-learning-indaba/indaba-pracs-2024/tree/main/practicals/Federated_Learning">federated learning</a>.</p>
+    <p class="card-desc">Lead author of a practical session on <a href="https://github.com/deep-learning-indaba/indaba-pracs-2024/tree/main/practicals/Federated_Learning">federated learning</a>. Also developed the <a href="{{ site.baseurl }}/notes/fl-dli.html">DLI federated learning practical</a> for the Deep Learning Institute curriculum.</p>
 </div>
 
 <div class="teaching-card">
@@ -47,28 +47,10 @@ title: Teaching
     <p class="card-desc">Delivered a tutorial on language modelling using n-gram models. <a href="{{ site.baseurl }}/notes/ngram.html">View resources →</a></p>
 </div>
 
-</div>
-
-<div class="teaching-cards">
-
-<h2 style="margin-top: 30px;">Additional Teaching Resources</h2>
-
 <div class="teaching-card">
-    <h3><a href="{{ site.baseurl }}/notes/cohere-playbooks.html" style="color: inherit; text-decoration: none;">Smol and Ultra-Scale Training</a></h3>
+    <h3><span class="card-role">Teaching Material</span> — Smol and Ultra-Scale Training</h3>
     <span class="card-meta">Cohere Playbooks</span>
-    <p class="card-desc">Notes and materials on training small and ultra-scale language models.</p>
-</div>
-
-<div class="teaching-card">
-    <h3><a href="{{ site.baseurl }}/notes/fl-dli.html" style="color: inherit; text-decoration: none;">DLI Federated Learning Practical</a></h3>
-    <span class="card-meta">Deep Learning Institute</span>
-    <p class="card-desc">A hands-on federated learning practical developed for the DLI curriculum.</p>
-</div>
-
-<div class="teaching-card">
-    <h3><a href="{{ site.baseurl }}/notes/maths_tutoring.html" style="color: inherit; text-decoration: none;">Mathematics Tutoring</a></h3>
-    <span class="card-meta">Private Tutoring</span>
-    <p class="card-desc">Mathematics tutoring resources and materials.</p>
+    <p class="card-desc">Notes and materials on training small and ultra-scale language models. <a href="{{ site.baseurl }}/notes/cohere-playbooks.html">View materials →</a></p>
 </div>
 
 </div>
