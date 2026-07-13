@@ -8,13 +8,13 @@ title: Presentations
 <div class="presentation-card">
     <h3><a href="{{ site.baseurl }}/notes/iclr-protocol-learning.html" style="color: inherit; text-decoration: none;">Communication-efficient training for foundation models through federated learning</a></h3>
     <span class="card-meta">Protocol Learning Workshop, ICLR 2026 — Rio</span>
-    <p class="card-desc">Talk on communication-efficient training approaches for foundation models using federated learning.</p>
+    <p class="card-desc">Talk on communication-efficient training approaches for foundation models using federated learning, introducing methods that alleviate communication costs by communicating infrequently. <a href="{{ site.baseurl }}/notes/iclr-protocol-learning.html">Watch talk →</a></p>
 </div>
 
 <div class="presentation-card">
     <h3><a href="{{ site.baseurl }}/notes/cohere-federated-learning.html" style="color: inherit; text-decoration: none;">Communication-efficient training for foundation models through federated learning</a></h3>
-    <span class="card-meta">Cohere Labs</span>
-    <p class="card-desc">Guest talk on communication-efficient training approaches for foundation models using federated learning.</p>
+    <span class="card-meta">Cohere Labs Open Science Community — invited by Harsha</span>
+    <p class="card-desc">Covers the historical context of why federated learning methods can be effective for large-scale foundation model training — introducing the promise of federated learning from seminal works to state-of-the-art systems competitive with centralised training. <a href="{{ site.baseurl }}/notes/cohere-federated-learning.html">Watch talk →</a></p>
 </div>
 
 <div class="presentation-card">
