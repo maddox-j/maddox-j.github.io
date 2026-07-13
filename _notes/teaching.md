@@ -49,8 +49,8 @@ title: Teaching
 
 <div class="teaching-card">
     <h3><span class="card-role">Teaching Material</span> — Smol and Ultra-Scale Training</h3>
-    <span class="card-meta">Cohere Playbooks</span>
-    <p class="card-desc">Notes and materials on training small and ultra-scale language models. <a href="{{ site.baseurl }}/notes/cohere-playbooks.html">View materials →</a></p>
+    <span class="card-meta">Cohere Labs Open Science Community, ML Systems & Theory Group</span>
+    <p class="card-desc">As co-lead for the ML Systems & Theory interest group at Cohere Labs, I led a deep dive into HuggingFace's smol and ultra-scale training playbooks — covering key systems and theory concepts in machine learning. <a href="{{ site.baseurl }}/notes/cohere-playbooks.html">View session recordings →</a></p>
 </div>
 
 </div>
