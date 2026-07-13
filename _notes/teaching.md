@@ -38,7 +38,7 @@ title: Teaching
 <div class="teaching-card">
     <h3><span class="card-role">Lead Author</span> — From Centralised to Decentralised Training: Federated Learning</h3>
     <span class="card-meta">Deep Learning Indaba, Dakar, Senegal · Sep 2024</span>
-    <p class="card-desc">Lead author of a practical session on <a href="https://github.com/deep-learning-indaba/indaba-pracs-2024/tree/main/practicals/Federated_Learning">federated learning</a>. Also developed the <a href="{{ site.baseurl }}/notes/fl-dli.html">DLI federated learning practical</a> for the Deep Learning Institute curriculum.</p>
+    <p class="card-desc">Lead author of a federated learning practical session developed in collaboration with Harsha and Luca, available on <a href="https://github.com/deep-learning-indaba/indaba-pracs-2024/tree/main/practicals/Federated_Learning">GitHub</a> and via the <a href="{{ site.baseurl }}/notes/fl-dli.html">DLI curriculum page</a>.</p>
 </div>
 
 <div class="teaching-card">
