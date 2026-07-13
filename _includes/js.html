@@ -154,8 +154,8 @@
                     try {
                         researchTable = $('#research_table').DataTable({
                             order: [[0, 'desc']],
-                            aLengthMenu: [[15, -1], [15, 'All']],
-                            pageLength: 15,
+                            aLengthMenu: [[5, 8, 15, -1], [5, 8, 15, 'All']],
+                            pageLength: 8,
                             searching: true,
                             dom: 'rtip'
                         });
