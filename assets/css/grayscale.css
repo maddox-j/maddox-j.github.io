@@ -12,8 +12,8 @@
     --surface-elevated: #171717;
     --accent-color: #5bc0de;
     --accent-hover-color: #48a5c0;
-    --link-color: #fed136;
-    --link-hover-color: #fec503;
+    --link-color: #5bc0de;
+    --link-hover-color: #48a5c0;
     --border-color: rgba(255, 255, 255, 0.28);
 }
 
@@ -25,8 +25,8 @@
     --surface-elevated: #f1f1f1;
     --accent-color: #5bc0de;
     --accent-hover-color: #48a5c0;
-    --link-color: #fed136;
-    --link-hover-color: #fec503;
+    --link-color: #5bc0de;
+    --link-hover-color: #48a5c0;
     --border-color: rgba(0, 0, 0, 0.24);
 }
 
@@ -348,8 +348,8 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    color: #222;
-    background-color: #fec503;
+    color: #111;
+    background-color: var(--accent-color);
 }
 
 footer {

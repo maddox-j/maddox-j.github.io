@@ -6,6 +6,18 @@ title: Presentations
 <div class="presentations-cards">
 
 <div class="presentation-card">
+    <h3>Working Group Session @ SOFAIR Lab Launch</h3>
+    <span class="card-meta">SOFAIR Lab Launch, London, UK · 10 September 2026</span>
+    <p class="card-desc">I participated a working-group session at the London launch of the SOFAIR Lab, a national initiative bringing together researchers from UCL, Cambridge, Oxford, and Edinburgh to advance open and sovereign AI in the UK. I presented our research on optimisation design for distributed training.</p>
+</div>
+
+<div class="presentation-card">
+    <h3>Internal Research Talk at Pluralis Research</h3>
+    <span class="card-meta">Pluralis Research · 13 August 2026</span>
+    <p class="card-desc">I presented an internal research talk on designing optimisation algorithms for distributed training. <a href="https://drive.google.com/file/d/1UPfqkNplrIkVJ2KuapWwweBvX27jhE5G/view" target="_blank">View talk →</a></p>
+</div>
+
+<div class="presentation-card">
     <h3><a href="{{ site.baseurl }}/notes/iclr-protocol-learning.html" style="color: inherit; text-decoration: none;">Distributed Training via Local Updates and Infrequent Communication</a></h3>
     <span class="card-meta">Protocol Learning Workshop, ICLR 2026</span>
     <p class="card-desc">Talk on communication-efficient training approaches for foundation models using federated learning. <a href="{{ site.baseurl }}/notes/iclr-protocol-learning.html">Watch talk →</a></p>
