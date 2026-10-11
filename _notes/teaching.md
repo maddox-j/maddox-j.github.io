@@ -6,6 +6,12 @@ title: Teaching
 <div class="teaching-cards">
 
 <div class="teaching-card">
+    <h3><span class="card-role">Lecturer</span> — Summer School on Scientific Machine Learning</h3>
+    <span class="card-meta">Petnica Science Center, Petnica, Serbia · Aug 2026</span>
+    <p class="card-desc">Delivered a lecture covering core machine learning foundations to prepare students for advanced topics focused on scientific applications.</p>
+</div>
+
+<div class="teaching-card">
     <h3><span class="card-role">Lecturer</span> — MLMI Seminar Series</h3>
     <span class="card-meta">University of Cambridge, Cambridge, UK · May–June 2026</span>
     <p class="card-desc">Delivered three lectures on:

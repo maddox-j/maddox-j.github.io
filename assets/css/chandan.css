@@ -33,12 +33,20 @@ a {
     vertical-align: middle;
 }
 
-a, h1, h2, h3, h4, h5, ul, li {
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li {
     text-transform: lowercase;
 }
 
 .research_thumb {
-    width: 50%; /* 90% */
+    width: 50%;
+    /* 90% */
     border-radius: 50%;
     border: 1px solid var(--border-color);
 }
@@ -59,14 +67,16 @@ td {
     /* background-image: radial-gradient(blue, black); */
     /* background-image: linear-gradient(red, yellow); */
     background: var(--bg-color);
-    background-size: cover; /* background-image: radial-gradient(circle, blue 0.00001%, black 99.9999%); /* Standard syntax (must be last) */
+    background-size: cover;
+    /* background-image: radial-gradient(circle, blue 0.00001%, black 99.9999%); /* Standard syntax (must be last) */
 }
 
 .iframe-box {
     position: relative;
     width: 100%;
     height: 0;
-    padding-top: 66.6%; /* This is your aspect ratio */
+    padding-top: 66.6%;
+    /* This is your aspect ratio */
 }
 
 .iframe {
@@ -185,7 +195,7 @@ td {
     color: var(--muted-text-color);
 }
 
-.academic-list li + li {
+.academic-list li+li {
     margin-top: 6px;
 }
 
@@ -197,14 +207,14 @@ td {
         gap: 2px;
     }
 
-    .navbar-custom .navbar-nav > li > a {
+    .navbar-custom .navbar-nav>li>a {
         padding-left: 10px;
         padding-right: 10px;
         font-size: 14px;
         letter-spacing: 0.04em;
     }
 
-    .navbar-custom .navbar-nav > .nav-divider {
+    .navbar-custom .navbar-nav>.nav-divider {
         width: 1px;
         height: 16px;
         margin: 0 8px;
@@ -282,6 +292,51 @@ td {
     width: 49.9%;
     padding-bottom: 50px;
     text-align: center;
+}
+
+.intro .coll2 {
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .intro-tagline,
+.intro .intro-role {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro .intro-tagline {
+    margin: 0 0 12px;
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+}
+
+.intro .intro-social {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.intro .intro-social li {
+    margin: 0 3px;
+}
+
+.intro .intro-role {
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (min-width: 767px) {
+    .intro .intro-tagline {
+        font-size: 24px;
+    }
+
+    .intro .intro-role {
+        font-size: 20px;
+    }
 }
 
 .coll3 {
@@ -368,6 +423,7 @@ img {
 }
 
 @media (max-width: 991px) {
+
     .coll3,
     .coll4,
     .coll5,

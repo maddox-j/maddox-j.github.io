@@ -1,259 +1,107 @@
-<h2 class="section-title"> Research
-    <details class="research_details">
-        <summary> Read research overview</summary>
-        <div class="research_details_text">
-            <p>
-                At present, my machine learning interests are centred around <em>distributed</em>, <em>efficient</em>
-                and <em>collaborative</em> machine learning.
-                In particular, I have a great affinity towards paradigms such as <em>federated learning</em> and
-                <em>neural network compression</em>, and the interplay this has with optimisation theory. Generally
-                speaking, the
-                motivating factor for this is that
-                I am circumspect towards the promise of centralised machine learning paradigms, which require enormous
-                amounts of data and
-                computational resources to achieve their state-of-the-art performance. Instead, I believe that there is
-                much benefit to
-                be derived from investigating alternate paradigms that can scale while promoting privacy inherently,
-                supported by sound
-                mathematical foundations.
-                <br><br>
-                If you find any of my research interesting, or you would like to collaborate on any ideas,
-                please do not hesitate to reach out.
+<h2 class="section-title"> Research </h2>
 
-            </p>
+<div class="research-overview">
+    <p>
+        My research focuses <em>distributed machine learning</em>,
+        <em>foundation-model training</em>, <em>machine learning efficiency</em>, and <em>efficient optimization</em>.
+        I am particularly interested in designing methods that make large-scale training more communication- and
+        compute-efficient, and more robust in realistic deployment settings.
+    </p>
+    <div class="research-themes">
+        <div class="research-theme">
+            <strong>Distributed training</strong>
+            <span>Efficient and scalable learning across geo-distributed devices and clusters.</span>
         </div>
-    </details>
-</h2>
+        <div class="research-theme">
+            <strong>Machine learning efficiency</strong>
+            <span>Reducing communication, compute, and memory costs while preserving model quality.</span>
+        </div>
+        <div class="research-theme">
+            <strong>Foundation models</strong>
+            <span>Training and adaptation of large models under practical constraints.</span>
+        </div>
+        <div class="research-theme">
+            <strong>Optimization</strong>
+            <span>Algorithms that improve convergence, efficiency, and robustness.</span>
+        </div>
+    </div>
 
-<script>
-    // When the user clicks on <div>, open the popup
-    function popup() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-    }
-</script>
-
-<div class="research-search-row">
-    <label for="research-search">search papers:</label>
-    <input id="research-search" type="search" placeholder="try: federated, optimisation, 🌀, 🔖">
-    <button id="research-search-btn" type="button">search</button>
-    <label for="research-sort" class="research-sort-label">order by:</label>
-    <select id="research-sort">
-        <option value="year_desc">year (newest)</option>
-        <option value="year_asc">year (oldest)</option>
-        <option value="title_asc">paper name (a-z)</option>
-        <option value="title_desc">paper name (z-a)</option>
-    </select>
+    <p class="research-links">
+        <a target="_blank" href="https://scholar.google.com/citations?user=8QKxqE0AAAAJ&hl=en">please see my Google
+            Scholar profile for an up-to-date list of my publications.</a>
+    </p>
 </div>
-
-<div class="research-tags-row">
-    <button type="button" class="research-tag-btn" data-term="🌀">🌀 deep learning</button>
-    <button type="button" class="research-tag-btn" data-term="🗣️">🗣️ nlp</button>
-    <button type="button" class="research-tag-btn" data-term="💻">💻 open-source ML</button>
-    <button type="button" class="research-tag-btn" data-term="🌳">🌳 efficiency</button>
-    <button type="button" class="research-tag-btn" data-term="🔖">🔖 position</button>
-    <button type="button" class="research-tag-btn" data-term="📈">📈 optimisation</button>
-    <button type="button" class="research-tag-btn" data-term="🤖">🤖 agentic ML</button>
-</div>
-
-<table id="research_table" class="display" style="width:100%">
-    <thead>
-        <tr>
-            <th>year</th>
-            <th>title</th>
-            <th>authors</th>
-            <th>tags</th>
-            <th>paper</th>
-            <th>code</th>
-            <th>misc</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="center">2026</td>
-            <td>The Red Queen Gödel Machine: Co-Evolving Agents and Their Evaluators</td>
-            <td>iacob, jovanović, shen, burkhardt, kurmanji, tastan, sani, venanzi, odonnat, cao, marino, qiu, lane</td>
-            <td class="med">🤖</td>
-            <td class="center"><a target="_blank" href="https://arxiv.org/abs/2606.26294">arXiv</a></td>
-            <td class="big"></td>
-            <td class="med"></td>
-        </tr>
-        <tr>
-            <td class="center">2026</td>
-            <td>FoMoE: Breaking the Full-Replica Barrier with a Federation of MoEs</td>
-            <td>sani, cao, kurmanji, iacob, jovanovic, gao, zhao, lane</td>
-            <td class="med">🌳🌀</td>
-            <td class="center"><a target="_blank" href="https://arxiv.org/abs/2606.19025">arXiv</a></td>
-            <td class="big"></td>
-            <td class="med"></td>
-        </tr>
-        <tr>
-            <td class="center">2026</td>
-            <td>PreLort: Prefix-Nested LoRA for Federated Fine-Tuning under Rank Heterogeneity</td>
-            <td>waseem, tastan, jovanovic, lane, lukas, nandakumar, horvath</td>
-            <td class="med">🌳🌀</td>
-            <td class="center"><a target="_blank" href="https://arxiv.org/abs/2606.15963">arXiv</a></td>
-            <td class="big"></td>
-            <td class="med"></td>
-        </tr>
-        <tr>
-            <td class="center">2026</td>
-            <td>LoRDO: Distributed Low-Rank Optimization with Infrequent Communication
-            </td>
-            <td> jovanović, iacob, safaryan, modoranu, sani, shen, qiu, alistarh, lane</td>
-            <td class="med">🌳📈</td>
-            <td class="center"><a target="_blank" href="https://arxiv.org/abs/2602.04396">ICML 2026</a></td>
-            <td class="big"></td>
-            <td class="med">
-            </td>
-        </tr>
-        <tr>
-            <td class="center">2025</td>
-            <td>MT-DAO: Multi-Timescale Distributed Adaptive Optimizers with Local Updates
-            </td>
-            <td> iacob, jovanović, safaryan, kurmanji, sani, horváth, shen, qiu, lane</td>
-            <td class="med">🌳📈</td>
-            <td class="center"><a target="_blank" href="https://arxiv.org/abs/2510.05361">ICLR 2026</a></td>
-            <td class="big"></td>
-            <td class="med">
-                top 3% of papers
-            </td>
-        </tr>
-        <tr>
-            <td class="center">2025</td>
-            <td>DES-LOC: Desynced Low Communication Adaptive Optimizers for Training Foundation Models
-            </td>
-            <td> iacob, sani, safaryan, giampouras, horváth, jovanović, kurmanji, aleksandrov, shen, qiu, lane</td>
-            <td class="med">🌳📈</td>
-            <td class="center"><a target="_blank" href="https://arxiv.org/abs/2505.22549">ICLR 2026</a></td>
-            <td class="big"></td>
-            <td class="med">
-                top 5% of papers
-            </td>
-        </tr>
-        <tr>
-            <td class="center">2025</td>
-            <td>Position: It's Time to Act on the Risk of Efficient Personalized Text Generation
-            </td>
-            <td> iofinova, jovanović, alistarh,</td>
-            <td class="med">🔖</td>
-            <td class="center"><a target="_blank" href="https://arxiv.org/abs/2502.06560">arxiv</a></td>
-            <td class="big"></td>
-            <td class="med">
-            </td>
-        </tr>
-        <tr>
-            <td class="center">2025</td>
-            <td>Panza: Design and Analysis of a Fully-Local Personalized Text Writing Assistant
-            </td>
-            <td>nicolicioiu, iofinova, jovanović, kurtic, nikdan, panferov, markov, shavit, alistarh</td>
-            <td class="med">💻🗣️🌀</td>
-            <td class="center">CPAL 2026 and <a target="_blank" href="https://openreview.net/forum?id=gsr3t360Xy">ICLR
-                    2025 Workshop
-                    on Foundation Models in the Wild</a></td>
-            <td class="big"><a target="_blank" href="https://github.com/IST-DASLab/PanzaMail"><i
-                        class="fa fa-github fa-fw"></i></a></td>
-            <td class="med">
-                <a target="_blank" href="https://www.youtube.com/watch?v=Yn96riyPx2k&t=28s"><i></i>bonus video</a>
-            </td>
-        </tr>
-        <tr>
-            <td class="center">2024</td>
-            <td>Second-Order Optimisation and Imbalanced Class Distribution in Emotional Analysis
-            </td>
-            <td>jovanović</td>
-            <td class="med">🌀📈</td>
-            <td class="center"><a target="_blank"
-                    href="https://www.mlmi.eng.cam.ac.uk/files/2023-2024/jovanovic_second-order_2024.pdf">MPhil Thesis @
-                    Cambridge</a></td>
-            <td class="big"><a></a></td>
-            <td class="med">
-                <a></a>
-            </td>
-        </tr>
-        <tr>
-            <td class="center">2023</td>
-            <td>Rumour Detection in the Wild: A Browser Extension for Twitter
-            </td>
-            <td>jovanović & ross</td>
-            <td class="med">💻🗣️🌀</td>
-            <td class="center"><a target="_blank" href="https://openreview.net/forum?id=9akS9IBfKs">NLP-OSS @
-                    EMNLP2023</a></td>
-            <td class="big"><a target="_blank" href="https://github.com/maddox-j/rumour_detection_in_the_wild"><i
-                        class="fa fa-github fa-fw"></i></a></td>
-            <td class="med">
-                <a target="_blank" href="https://aclanthology.org/2023.nlposs-1.15/"><i></i>ACL</a>
-            </td>
-        </tr>
-        <tr>
-            <td class="center">2023</td>
-            <td>EDAC: Efficient Deployment of Audio Classification Models For COVID-19 Detection
-            </td>
-            <td>jovanović<sup>*</sup>, mihaly<sup>*</sup> & donaldson<sup>*</sup></td>
-            <td class="med">🌳🌀</td>
-            <td class="center"><a target="_blank" href="https://arxiv.org/abs/2309.05357">arxiv preprint</a></td>
-            <td class="big"><a target="_blank" href="https://github.com/EDAC-ML4H/EDAC-ML4H"><i
-                        class="fa fa-github fa-fw"></i></a></td>
-            <td class="med">
-                <div class="popup" onmouseover="popup()" onmouseout="popup()">More info...
-                    <span class="popuptext" id="myPopup">Awarded second place IBM prize in MLP course awards at
-                        UoE.</span>
-                </div>
-            </td>
-        </tr>
-    </tbody>
-
-</table>
 
 <style>
-    .research-search-row {
-        margin: 10px 0 16px;
+    .research-overview {
+        margin-top: 8px;
+        margin-bottom: 18px;
     }
 
-    .research-search-row label {
-        margin-right: 10px;
-        font-size: medium;
-        text-transform: lowercase;
+    .research-themes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 12px;
+        margin: 18px 0 14px;
+    }
+
+    .research-theme {
+        padding: 14px 16px;
+        border: 1px solid rgba(59, 130, 246, 0.22);
+        border-left: 4px solid #3b82f6;
+        border-radius: 8px;
+        background: linear-gradient(180deg, rgba(59, 130, 246, 0.07), rgba(14, 165, 233, 0.03));
+        box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04);
+    }
+
+    .research-theme strong {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 15px;
+    }
+
+    .research-theme span {
+        display: block;
+        color: var(--muted-text-color);
+        line-height: 1.5;
+        font-size: 14px;
+    }
+
+    .research-links {
+        margin-top: 12px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .research-collab {
+        margin-top: 12px;
+        font-size: 16px;
+        color: var(--text-color);
+        font-weight: 500;
+    }
+
+    .research-links a {
+        color: #7dd3fc;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        text-decoration-thickness: 1.5px;
+    }
+
+    .research-links span {
+        margin: 0 8px;
         color: var(--muted-text-color);
     }
 
-    .research-sort-label {
-        margin-left: 14px;
+    .research-overview p {
+        margin-bottom: 12px;
     }
 
-    #research-search {
-        width: min(100%, 440px);
-        padding: 8px 10px;
-        border: 1px solid var(--border-color);
-        border-radius: 4px;
-        background: var(--surface-color);
-        color: var(--text-color);
+    .research-search-row {
+        display: none;
     }
 
-    #research-search-btn,
-    #research-sort,
-    .research-tag-btn {
-        padding: 8px 10px;
-        border: 1px solid var(--border-color);
-        border-radius: 4px;
-        background: var(--surface-color);
-        color: var(--text-color);
-        text-transform: lowercase;
-    }
-
-    #research-search-btn {
-        margin-left: 8px;
-    }
-
-    .research-tags-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin: 0 0 14px;
-    }
-
-    .research-tag-btn {
-        font-size: 14px;
+    #research_table {
+        display: none;
     }
 
     .big {
